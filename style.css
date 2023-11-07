@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+}
+
+.calculadora {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color:#1C2833;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#pantalla {
+  width: 92%;
+  padding: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+input[type="button"] {
+  width: 22%;
+  height: 40px;
+  margin-right: 2%;
+  margin-bottom: 5px;
+  font-size: 16px;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botonIgual {
+  background-color: lightblue !important;
+}
+
+
+
+/* Media Query para tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024x) {
+  .calculadora {
+      max-width: 100%;
+  }
+  input[type="button"] {
+      width: 30%;
+  }
+}
+
+/* Media Query para teléfonos móviles */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .calculadora {
+      padding: 10px;
+      width: 80%;
+      margin-left: 30px;
+  }
+  input[type="button"] {
+      width: 20%;
+  }
+  #pantalla {
+    width: 91%;
+  }
+
+  input[type="button"] {
+    width: 22%;
+    height:40px;
+    margin-left:px;
+    margin-right:2%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
